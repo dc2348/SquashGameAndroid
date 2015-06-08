@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >        
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:textColor="#ffB2CCFF"
+        android:background="#aa000000"
+        android:textStyle="bold"
+        android:textSize="48dp"
+        android:text="Squash Game" />
+        
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/squash_match"
+        android:gravity="center"
+        android:layout_above="@+id/AdvICE_GAP"
+        android:layout_below="@+id/title"/>
+    
+     <TextView
+        android:id="@+id/AdvICE_GAP"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"  
+        android:layout_alignParentBottom="true"      
+        android:gravity="center"
+        android:textColor="#ffB2CCFF"
+        android:background="#aa000000"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:typeface="serif"
+        android:text="made by AdvICE_GAP" />
+     
+     <Button
+        android:id="@+id/startButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentRight="true"
+        android:textSize="18dp"
+        android:text="Game start" />
+         
+    
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/startButton"
+        android:layout_alignParentRight="true"
+        android:textSize="18dp"
+        android:text="Exit" />
+    
+</RelativeLayout>
